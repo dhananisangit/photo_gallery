@@ -4,13 +4,47 @@ const path = require("path");
 
 const loaders = [
     {
-        test: /\.(js|jsx|ts|tsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader",
     },
     {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "scss-loader"],
+        // SASS/SCSS Modules
+        // For componentised styling
+        test: /\.module\.s(a|c)ss$/,
+        use: [
+            MiniCssExtractPlugin.loader,
+            {
+                loader: "css-loader",
+                options: {
+                    modules: true,
+                    localsConvention: "camelCaseOnly",
+                    sourceMap: false,
+                },
+            },
+            {
+                loader: "sass-loader",
+                options: {
+                    sourceMap: false,
+                },
+            },
+        ],
+    },
+    {
+        // Normal SASS/SCSS files (excluding modules)
+        // More for global styling
+        test: /\.s(a|c)ss$/,
+        exclude: /\.module.(s(a|c)ss)$/,
+        use: [
+            MiniCssExtractPlugin.loader,
+            "css-loader",
+            {
+                loader: "sass-loader",
+                options: {
+                    sourceMap: false,
+                },
+            },
+        ],
     },
     {
         // Uses url-loader to return link referencing the file unconditionally
