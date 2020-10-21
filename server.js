@@ -2,10 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile(path.join(__dirname, "dist", "index.html"));
+});
+
+app.get("/main.*", function (req, res) {
+    res.sendFile(path.join(__dirname, "dist", req.url.split("/")[1]));
 });
 
 app.listen(5000, () => {
