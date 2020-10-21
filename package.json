@@ -1,0 +1,24 @@
+{
+  "name": "photo_gallery",
+  "version": "1.0.0",
+  "description": "a sample react component displaying images from a 3rd party API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhananisangit/photo_gallery.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "photogallery"
+  ],
+  "author": "Sangit Dhanani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhananisangit/photo_gallery/issues"
+  },
+  "homepage": "https://github.com/dhananisangit/photo_gallery#readme"
+}
