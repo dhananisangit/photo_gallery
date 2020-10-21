@@ -1,0 +1,24 @@
+{
+    "images": [
+        {
+            "image": "http://picsum.photos/800/300/",
+            "caption": "caption1"
+        },
+        {
+            "image": "http://picsum.photos/350/65/",
+            "caption": "caption2"
+        },
+        {
+            "image": "http://picsum.photos/420/420/",
+            "caption": "caption3"
+        },
+        {
+            "image": "http://picsum.photos/300/900/",
+            "caption": "caption4"
+        },
+        {
+            "image": "http://picsum.photos/350/400/",
+            "caption": "caption5"
+        }
+    ]
+}

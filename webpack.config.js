@@ -73,8 +73,6 @@ const loaders = [
 const extensions = [
     ".js",
     ".jsx",
-    ".ts",
-    ".tsx",
     ".json",
     ".scss",
     ".gif",
