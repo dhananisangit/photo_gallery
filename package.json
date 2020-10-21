@@ -1,33 +1,34 @@
 {
-  "name": "photo_gallery",
-  "version": "1.0.0",
-  "description": "a sample react component displaying images from a 3rd party API",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dhananisangit/photo_gallery.git"
-  },
-  "keywords": [
-    "webpack",
-    "react",
-    "photogallery"
-  ],
-  "author": "Sangit Dhanani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dhananisangit/photo_gallery/issues"
-  },
-  "homepage": "https://github.com/dhananisangit/photo_gallery#readme",
-  "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
-    "@babel/preset-typescript": "^7.12.1",
-    "babel-loader": "^8.1.0",
-    "webpack": "^5.1.3",
-    "webpack-cli": "^4.1.0"
-  }
+    "name": "photo_gallery",
+    "version": "1.0.0",
+    "description": "a sample react component displaying images from a 3rd party API",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --mode production --config ./webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dhananisangit/photo_gallery.git"
+    },
+    "keywords": [
+        "webpack",
+        "react",
+        "photogallery"
+    ],
+    "author": "Sangit Dhanani",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dhananisangit/photo_gallery/issues"
+    },
+    "homepage": "https://github.com/dhananisangit/photo_gallery#readme",
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.1",
+        "@babel/preset-typescript": "^7.12.1",
+        "babel-loader": "^8.1.0",
+        "webpack": "^5.1.3",
+        "webpack-cli": "^4.1.0"
+    }
 }

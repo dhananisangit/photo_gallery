@@ -1,3 +1,5 @@
+const path = require("path");
+
 const loaders = [
     {
         test: /\.(js|jsx|ts|tsx)$/,
