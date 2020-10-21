@@ -18,7 +18,7 @@ module.exports = {
         rules: loaders,
     },
     output: {
-        path: path.join(__dirname, "../../", ".tmp/public/js/dist"),
+        path: path.resolve(__dirname, "dist"),
         filename: "[hash].[name].js",
     },
     optimization: {

@@ -98,6 +98,8 @@ lib-cov
 *.pid
 *.next
 npm-debug.log
+# webpack build output
+dist
 
 
 
