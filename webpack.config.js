@@ -18,8 +18,9 @@ module.exports = {
         rules: loaders,
     },
     output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "[hash].[name].js",
+        path: path.resolve(__dirname, "public"),
+        publicPath: "/",
+        filename: "bundle.js",
     },
     optimization: {
         splitChunks: {},

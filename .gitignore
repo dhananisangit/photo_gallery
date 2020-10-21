@@ -99,7 +99,8 @@ lib-cov
 *.next
 npm-debug.log
 # webpack build output
-dist
+public/bundle*
+
 
 
 
